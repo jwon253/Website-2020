@@ -1,0 +1,548 @@
+/* Colours used in website 
+Very Soft Cyan #C9F1FD
+Strong Cyan #00A4D3
+Dark Blue #033076
+White #FFFFFF
+Very Dark Gray #2C2F33
+*/
+
+/* -----------------------STYLING FOR ALL PAGES--------------------- */
+body {
+    font-family: 'roboto', sans-serif; /* font for body text */
+    color: #ffffff;   /* colour of body text */
+    margin: auto;   /* brower calulates margin */
+}
+
+ header nav ul {
+    list-style-type: none; /* removes the bullet points */
+    margin: 0px; 
+    padding: 0px;
+    overflow: hidden; /* Controls content too big for area */
+    background-color: #2C2F33; /* Very Dark Grey */
+}
+
+/* floats page links next to each other */
+header nav li {
+    float:right; /* element on right side */
+}
+
+header li a {
+    display: block; 
+    color: #00A4D3; /* Strong Cyan */
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    width: 80px;
+    height: 19px;
+    font-size: 108%;
+    
+}
+
+/* Changes the link colour background appears on hover */
+hedaer li a:hover:not(.active) {
+    color: #ffffff; /* Dark Blue */
+}
+
+/* changes the current lin font weight to bold to show the page the user is on */
+.active {
+    font-weight: bold;
+    background-color: #00A4D3; /* Strong Cyan */
+    color: #2C2F33; /* Very Dark Grey */
+}
+
+/* the logo for the website*/
+header h1 {
+    text-align:left; /* element on left side */
+    float: left;
+    padding: 10px 10px 10px 45px; /* amount of space inside the border */
+    height: 39px;
+    margin: 0px;
+    background-color: #2C2F33; /* Very Dark Grey */     
+    color: #00A4D3; /* Strong Cyan*/
+    text-shadow: 4px 4px #033076; /* shadow behind text */
+} 
+
+/* part of the logo 'Engineering' being white */ 
+h1 span.name {
+    color:#ffffff; /* White */
+}
+
+/* hero image */
+.hero-image {
+    background-image: url(Images/hero-image.jpg); /* Hero image */
+    margin-top: 0px;
+    height: 640px;
+    width: 960px; 
+    overflow: hidden; /* Hero image is set behind */
+}
+
+/* an underline or line under titles */
+.underline {
+    border-bottom: 4px solid #00A4D3; /* Strong Cyan */
+    padding-bottom: 3px;
+} 
+
+/* quote on the hero image */
+.quote {
+    padding-right: 480px;
+    padding-top: 250px;
+    text-align: center;
+    font-size: 110%;
+}
+
+/* quote creator - Scott Adams */
+h5 {
+    font-size: 90%;
+}
+
+/* sets the width of the website */
+.wrapper {
+    width: 960px;
+    margin: auto;
+}
+
+/* recoloured texts for hyperlink */
+.links {
+    color: #00A4D3; /* Strong Cyan */
+    text-decoration: none; /* removes text decoration */
+}
+
+/* introduction text */
+.intro {
+    text-align: center;
+    background-color: #2C2F33; /* Very Dark Grey */
+    padding: 5px 50px 5px;
+}
+
+.content-main {
+    background-color: #C9F1FD;
+    line-height: 24px; /* sets the spacing between texts vertically */
+    padding-bottom: 5px;
+}
+
+/* What would I do text */
+.factsA1 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin: 50px;
+    margin-top: 70px;
+    padding-top: 1px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 175px;
+    width: 400px;
+    font-size: 97%;
+}
+
+/* What would I earn text */
+.factsA2 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin-left: 460px;
+    margin-bottom: 70px;
+    margin-top: 60px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 250px;
+    width: 400px;
+}
+
+/* analytics.jpg iamge */
+.imageA1 {
+    float: right;
+    margin-right: 50px;
+    margin-top: 70px;
+    border-top: solid 8px #00A4D3; /* Strong Cyan */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Dark Blue */
+}
+
+/* coding.jpg image */
+.imageA2 {
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-top: solid 8px #00A4D3; /* Border of the image */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Dark Blue */
+}
+
+/* Large image for skills page */
+.skills-image {
+    background-image: url(Images/skills.jpg);
+    margin-top: 0px;
+    height: 450px;
+    width: 960px; 
+    overflow: hidden; 
+}
+
+/* the skills title in the large image*/
+.skills-heading {
+    font-size: 300%;
+    color: #033076;
+    float: left;
+    margin-top: 110px;
+    margin-left: 150px;
+}
+
+/* a bar tbat separates or between the large image and the page content */ 
+.skills-spacing {
+    background-color: #2C2F33; /* Very Dark Grey */
+    padding: 8px;
+}
+
+/* What Personal Qualities Do I Need? text */
+.factsB1 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin: 50px;
+    margin-top: 40px;
+    padding-top: 1px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 190px;
+    width: 400px;
+}
+
+/* work.jpg image */
+.imageB1 {
+    float: right;
+    margin-right: 50px;
+    margin-top: 45px;
+    border-top: solid 8px #00A4D3; /* Strong Cyan */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Darke Blue */
+}
+
+/* the box that contains the creativity, cooperation and problem solving images and text content */
+.qualities {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin: 0px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 420px;
+    width: 900px;
+}
+
+/* 3 text boxes besides each other */
+.column {
+    float: left;
+    width: 25%;
+    padding-left: 60px;
+}
+
+/* knowledge.jpeg image*/
+.imageB2 {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-top: solid 8px #00A4D3; /* Border of the image */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Dark Blue */
+}
+
+/* What Skills & Knowlodge Do I Need? text */    
+.factsB2 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin-left: 460px;
+    margin-bottom: 70px;
+    margin-top: 0px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 250px;
+    width: 400px; 
+}
+
+/* creativity.jpg image */
+.imageB3 {
+    border-right: solid 8px #033076; /* Darke Blue */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    margin-left: 20px;
+}
+
+/* cooperation.jpeg image */
+.imageB4 {
+    border-right: solid 8px #033076; /* Dark Blue */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    margin-left: 40px;
+}
+
+/* problem%solving.jpg image */
+.imageB5 {
+    border-right: solid 8px #033076; /* Dark Blue */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    margin-left: 40px;
+}
+
+/* Large image for about page */
+.about-image {
+    background-image: url(Images/about.jpg);
+    margin-top: 0px;
+    height: 510px;
+    width: 960px; 
+    overflow: hidden; 
+}
+
+/* the about title in large image */
+.about-heading {
+    font-size: 300%;
+    color: #033076;
+    float: right;
+    margin-top: 30px;
+    margin-right: 170px;
+}
+
+/* the education title and bar that separates the large image and education content */
+.education {
+    text-align: center;
+    background-color: #2C2F33; /* Very Dark Grey */
+    font-size: 200%;
+    padding: 1px;
+    margin-top: 0px;
+    
+}
+
+/* What High School Qualifications Do I Need? text */
+.factsC1 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin: 50px;
+    margin-top: 40px;
+    padding-top: 1px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 175px;
+    width: 400px;
+}
+
+/* education.jpg image */
+.imageC1 {
+    float: right;
+    margin-right: 50px;
+    margin-top: 45px;
+    border-top: solid 8px #00A4D3; /* Strong Cyan */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Dark Blue */
+}
+
+/* What Tertiary Qualifications Do I need? text */
+.factsC2 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin-left: 460px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 250px;
+    width: 400px;  
+}
+
+/* study.jpg image */
+.imageC2 {
+    float: left;
+    margin-left: 50px;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    border-top: solid 8px #00A4D3; /* Border of the image */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Dark Blue */
+}
+
+/* Where can I Study? text */
+.factsC3 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin: 50px;
+    margin-top: 40px;
+    padding-top: 1px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 175px;
+    width: 400px;
+}
+
+/* group.jpg image */
+.imageC3 {
+    float: right;
+    margin-right: 50px;
+    margin-top: 5px;
+    border-top: solid 8px #00A4D3; /* Strong Cyan */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Dark Blue */
+}
+
+/* the employment title and bar that separates education content and employment content */
+.employment  {
+    text-align: center;
+    background-color: #2C2F33; /* Very Dark Grey */
+    font-size: 175%;
+    padding: 1px;
+
+}
+
+/* What Jobs Opportunities Are there? text */
+.factsC4 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin: 50px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-top: 40px;
+    padding-top: 1px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 215px;
+    width: 650px;
+}
+
+/* software.jpg image */
+.imageC4 {
+    float: right; /* element on left side */
+    border-top: solid 8px #00A4D3; /* Border of the image */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Dark Blue */     
+}
+
+/* What Other Related Jobs could I Do? text */
+.factsC5 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin-left: 460px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 260px;
+    width: 400px;  
+}
+
+/* eletronics.jpg image */
+.imageC5 {
+    float: left; /* element on left side */
+    margin-left: 50px;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    border-top: solid 8px #00A4D3; /* Border of the image */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076; /* Dark Blue */    
+}
+
+/* Will Robots Take Over My Job? text */
+.factsC6 {
+    background-color: #2C2F33; /* Very Dark Grey */
+    margin: 50px;
+    margin-top: 40px;
+    padding-top: 1px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 175px;
+    width: 400px;
+}
+
+/* robots.jpg image */
+.imageC6 {
+       float: right; /* element on right side */
+    margin-right: 50px; 
+    border-top: solid 8px #00A4D3; /* Strong Cyan */
+    border-left: solid 8px #00A4D3; /* Strong Cyan */
+    border-bottom: solid 8px #033076; /* Dark Blue */
+    border-right: solid 8px #033076;  /* Dark Blue */  
+}
+
+/* Large image for contact page */
+.contact-image {
+    background-image: url(Images/contact.jpg);
+    margin-top: 0px;
+    height: 481px;
+    width: 960px; 
+    overflow: hidden;
+}
+
+/* the contact title in the large image */
+.contact-heading {
+    font-size: 300%;
+    color: #033076; /* Dark Blue */
+    float: left;
+    margin-left: 320px;
+}
+
+/* a bar that separates or between the large image and contact content */
+.contact-spacing {
+    background-color: #2C2F33; /* Very Dark Grey */
+    padding: 8px;  
+}
+
+/* Contact text */
+.introC {
+    text-align: center;
+    color: #2C2F33; /* Very Dark Grey */
+}
+
+/* removes border of the form */
+.iframe {
+    border-style: none;
+}
+
+footer {
+    background-color: #2C2F33; /* Very Dark Grey */
+    width: 100%;
+    color: #ffffff; /* White */
+    text-align: center;
+    font-size: 100%;
+    padding: 10px 0px;
+    border-top-style: solid; 
+    border-color: #C9F1FD; /* Very Soft Cyan */
+}
+
+
+ footer nav ul {
+    list-style-type: none; /* removes the bullet points */
+     margin: 0px;
+     padding: 0px;
+     overflow: hidden; /* Controls content too big for area */
+     background-color: #2C2F33; /* Very Dark Grey */
+     margin-left: 200px;
+}
+/* floats page links next to each other */
+footer nav li {
+    float:left; /* element on right side */
+    margin-left: 0px;
+}
+
+footer li a {
+    display: block; 
+    margin-left: 0px;
+    color: #ffffff  ; /* White */
+    text-align: center;
+    padding: 0px 30px;
+    text-decoration: none;
+    width: 80px;
+    height: 25px;
+    font-size: 100%;
+}
+
+/* Changes the colour of the text appears when hovered */
+footer li a:hover:not(.active) {
+    color: #00A4D3; /* Strong Cyan */
+}
